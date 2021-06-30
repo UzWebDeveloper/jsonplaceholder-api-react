@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav style */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+}
+.nav-continer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin: 15px;
+  color: white;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Posts page style */
+.section {
+  display: flex;
+  justify-content: center;
+}
+.continer {
+  width: 1200px;
+}
+.title {
+  text-align: center;
+  color: rgb(40, 0, 77);
+  margin: 30px 0 15px 0;
+  font-size: 25px;
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+/* @keyframes changeColor{
+  0%{
+    color: rgb(49, 49, 49);
+    left: -50;
+  }
+  25%{
+    color: rgb(163, 23, 23);
+    left: 0px;
+  }
+  50%{
+    color: rgb(163, 23, 23);
+    left: 0px;
+  }
+  75%{
+    color: rgb(163, 23, 23);
+    left: 0px;
+  }
+  100%{
+    color: rgb(0, 0, 0);
+    left: 50;
+  }
+} */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  border: 2px solid rgb(137, 43, 226);
+  width: 202px;
+  margin: 7px;
+  border-radius: 10px;
+  transition: 0.7s;
+  padding-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(137, 43, 226, 0.4);
+}
+.cardImg {
+  text-align: center;
+  padding: 10px;
+}
+.cardTitle {
+  width: 200px;
+  padding: 5px;
+  font-weight: bolder;
+  border-bottom: 1px solid rgb(137, 43, 226);
+  text-transform: capitalize;
+  color: rgb(40, 0, 77);
+}
+.cardBody {
+  width: 200px;
+  padding: 10px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: rgb(40, 0, 77);
+}
+
+.homeLink {
+  text-decoration: none;
+}
+
+.form-card input {
+  width: 500px;
+  height: 50px;
+  margin: 7px;
+  outline: none;
+  border: 2px solid blueviolet;
+  border-radius: 7px;
+}
+
+.sectionOne-continer {
+}
+.cards-one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sectionOne h1 {
+  text-align: center;
+}
+.form-card__btn {
+  padding: 10px 40px;
+  background-color: blueviolet;
+  border: 2px solid rgba(137, 43, 226, 0);
+  transition: 0.6s;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 7px;
+}
+.form-card__btn:hover {
+  background-color: rgba(137, 43, 226, 0);
+  border: 2px solid rgb(137, 43, 226);
+  color: blueviolet;
+}
+
+/* Home*/
+
+.addPost{
+  float: right;
+  position: relative; 
+  top: -50px;
+  left: -30px;
+}
+
+.btn {
+  text-decoration: none;
+  margin: 7px;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.btn-edit {
+  border: 1px solid rgb(128, 128, 255);
+  background-color: rgb(128, 128, 255);
+  color: white;
+  transition: 0.4s;
+}
+.btn-edit:hover {
+  background-color: rgba(255, 99, 71, 0);
+  color: rgb(128, 128, 255);
+}
+
+.btn-delete {
+  border: 1px solid rgb(240, 36, 0);
+  background-color: rgb(240, 36, 0);
+  color: white;
+  transition: 0.4s;
+}
+
+.btn-delete:hover {
+  background-color: rgba(255, 99, 71, 0);
+  color: rgb(240, 36, 0);
+}
+
+.sectionOne-title {
+  color: rgb(40, 0, 77);
+  margin: 20px 0;
+}
